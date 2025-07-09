@@ -21,21 +21,21 @@ time_limit = 30  # seconds
 
 # Load images
 try:
-    lebron_img = pygame.image.load("lebron.png").convert_alpha()
+    lebron_img = pygame.image.load("images\lebron.png").convert_alpha()
     lebron_img = pygame.transform.scale(lebron_img, (60, 50))
 except pygame.error:
     lebron_img = pygame.Surface((60, 50), pygame.SRCALPHA)
     lebron_img.fill(RED)
 
 try:
-    kawhi_img = pygame.image.load("yn.png").convert_alpha()
+    kawhi_img = pygame.image.load("images\yn.png").convert_alpha()
     kawhi_img = pygame.transform.scale(kawhi_img, (50, 50))
 except pygame.error:
     kawhi_img = pygame.Surface((50, 50), pygame.SRCALPHA)
     kawhi_img.fill((0, 0, 255))
 
 try:
-    mj_img = pygame.image.load("lockedin.png").convert_alpha()
+    mj_img = pygame.image.load("images\lockedin.png").convert_alpha()
     mj_img = pygame.transform.scale(mj_img, (50, 50))
 except pygame.error:
     mj_img = pygame.Surface((50, 50), pygame.SRCALPHA)
